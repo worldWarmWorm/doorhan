@@ -1,0 +1,172 @@
+@import 'fonts';
+@import 'vars';
+@import 'fonts';
+
+// default styles
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+
+    &::after {
+        margin: 0;
+        padding: 0;
+    }
+
+    &::before {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .02em;
+    font-size: 14px;
+    color: #222;
+}
+
+// default styles
+
+.header__slider {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-x: hidden;
+}
+
+.header__slider-item {
+    background: url('../img/img-1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    outline: none;
+}
+
+.header__slider-item.item-2 {
+    background: url('../img/img-2.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.slick-btn {
+    position: absolute;
+    top: 47%;
+    right: 1%;
+    z-index: 1;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #666;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "icomoon";
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+.slick-prev {
+    left: 1%;
+
+    &::before {
+        content: '\f053';
+
+    }
+}
+
+.slick-next::before {
+    content: '\f054';
+}
+
+.slick-dots {
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+
+    li {
+        z-index: 1;
+    }
+
+    li[class="slick-active"] button {
+        background-color: #666;
+    }
+
+    button {
+        border-radius: 50%;
+        font-size: 0;
+        width: 18px;
+        height: 18px;
+        margin: 6px;
+        border: 1.5px solid #666;
+        outline: none;
+    }
+}
+
+.dots-style li[class="slick-active"] button {
+    background-color: #00897b;
+}
+
+.menu {
+    z-index: 1;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: #fff;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    a {
+        margin: 0 10px;
+        font-size: 16px;
+        color: #000;
+    }
+
+}
+
+.logo img {
+    max-height: 25px;
+}
+
+
+@import 'media';
