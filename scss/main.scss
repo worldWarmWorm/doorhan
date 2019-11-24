@@ -52,6 +52,7 @@ body {
 
 html {
     overflow-x: hidden;
+    font-size: 10px;
 }
 
 #toTop {
@@ -71,6 +72,7 @@ html {
     color: $theme2;
     font-family: "icomoon";
     transform: rotate(90deg);
+
     &::after {
         content: '\f104';
         position: absolute;
@@ -112,16 +114,23 @@ html {
 .item-2__content {
     width: 30%;
     border-radius: 2px;
-    transform: translate(200%, calc(100% - 209px));
     background-color: rgba($theme2, .8);
     padding: 20px 30px;
+    min-width: 20%;
+    min-height: 16%;
+    position: relative;
+    top: 12%;
+    left: 50%;
+    transform: translate(25%);
+
     h1 {
-        font-size: 30px;
+        font-size: 2.5rem;
         font-weight: 600;
         margin-bottom: 15px;
     }
+
     p {
-        font-size: 16px;
+        font-size: 1.5rem;
     }
 }
 
@@ -214,7 +223,7 @@ html {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 60px;
+        min-height: 80px;
         background-color: #fff;
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
@@ -309,11 +318,35 @@ html {
 
 // about
 
+// .about::after {
+//     
+// }
+
 .about__inner {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    &::before {
+        content: '';
+        background: url('../img/about-fon.jpg') no-repeat 50% 50%;
+        background-size: cover;
+        filter: opacity(70%);
+        width: 50%;
+        height: 90%;
+        position: absolute;
+        left: 0;
+        top: 5%;
+    }
+
+    &::after {
+        content: '1997 - н.в.';
+        font-size: 5rem;
+        font-weight: 600;
+        position: absolute;
+        right: 0;
+        top: 15%;
+    }
 }
 
 .about__inner-content {
@@ -326,6 +359,8 @@ html {
 
     h2 {
         margin-bottom: 15px;
+        font-size: 3rem;
+        font-weight: 600;
     }
 
     p {
