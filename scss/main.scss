@@ -57,21 +57,22 @@ html {
 
 #toTop {
     z-index: 999;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    background-color: $theme1;
+    width: 50px;
+    
+    height: 50px;
+    font-size: 3rem;
+    background-color: rgba($theme3, .7);
     border-radius: 2px;
     text-align: center;
-
     position: fixed;
-    bottom: 10px;
-    left: 10px;
+    bottom: 20px;
+    left: 20px;
     cursor: pointer;
     display: none;
     color: $theme2;
     font-family: "icomoon";
     transform: rotate(90deg);
+    transition: .3s;
 
     &::after {
         content: '\f104';
@@ -79,6 +80,11 @@ html {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        padding-bottom: 2px;
+    }
+
+    &:hover {
+        background-color: rgba($theme3, 1);
     }
 }
 
@@ -311,6 +317,7 @@ html {
         font-family: "icomoon";
         color: $theme2;
         font-size: 3rem;
+        padding-bottom: 2px;
         transition: .3s;
     }
 }

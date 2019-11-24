@@ -29,7 +29,7 @@ $(document).ready(function () {
     $('.toggle-button_1').click(function () {
         $('.item-1__content').toggle(300);
 
-        if ($('.toggle-button .show-icon')) {
+        if ($('.toggle-button .show-icon').is(":visible")) {
             $('.toggle-button .show-icon').hide();
             $('.toggle-button .hide-icon').show();
         } else {
@@ -41,6 +41,14 @@ $(document).ready(function () {
 
     $('.toggle-button_2').click(function () {
         $('.item-2__content').toggle(300);
+
+        if ($('.toggle-button .show-icon').is(":visible")) {
+            $('.toggle-button .show-icon').hide();
+            $('.toggle-button .hide-icon').show();
+        } else {
+            $('.toggle-button .hide-icon').hide();
+            $('.toggle-button .show-icon').show();
+        }
     });
 
 });
