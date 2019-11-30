@@ -1,7 +1,9 @@
 @import 'fonts';
+@import 'gallery';
+@import 'defaults';
 @import 'vars';
 
-// default styles
+// default styles----------------------------------
 
 html,
 body,
@@ -71,13 +73,12 @@ html {
     cursor: pointer;
     display: none;
     color: $theme2;
-    font-family: "icomoon";
+    font-family: "icomoon" !important;
     transform: rotate(90deg);
     transition: .3s;
 
     &::after {
         content: '\f104';
-        font-family: 'icomoon' !important;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -147,9 +148,9 @@ html {
     }
 }
 
-// default styles
+// default styles----------------------------------
 
-// header
+// header----------------------------------
 
 .header {
     position: relative;
@@ -273,7 +274,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "icomoon";
+    font-family: "icomoon" !important;
     color: #fff;
     font-size: 2.5rem;
     transition: .3s;
@@ -285,7 +286,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "icomoon";
+    font-family: "icomoon" !important;
     color: #fff;
     font-size: 2.5rem;
     transition: .3s;
@@ -301,6 +302,7 @@ html {
     height: 50px;
     border-radius: 4px;
     background-color: $theme3;
+    font-family: "icomoon" !important;
     cursor: pointer;
     transition: .3s;
 
@@ -317,7 +319,6 @@ html {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: "icomoon";
         color: $theme2;
         font-size: 3rem;
         padding-bottom: 2px;
@@ -410,14 +411,11 @@ html {
     max-height: 30px;
 }
 
-// header
+// header----------------------------------
 
 
-// about
+// about----------------------------------
 
-// .about::after {
-//     
-// }
 
 .about__inner {
     height: 100vh;
@@ -490,11 +488,23 @@ html {
         transform: skew(2deg, 2deg);
         box-shadow: 0 0 8px $theme1;
     }
-
-
 }
 
+// about----------------------------------
 
+// gallery----------------------------------
 
+.gallery {
+    padding: 50px 0;
+
+    h2 {
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+// gallery----------------------------------
 
 @import 'media';

@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    // gallery
+    Grid.init();
+
     // slider
     $('.header__slider').slick({
         infinite: true,
