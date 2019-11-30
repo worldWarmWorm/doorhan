@@ -1,3 +1,4 @@
+@import 'fonts';
 @import 'vars';
 
 // default styles
@@ -76,6 +77,7 @@ html {
 
     &::after {
         content: '\f104';
+        font-family: 'icomoon' !important;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -332,11 +334,13 @@ html {
 
     &::before {
         content: '\f104';
+        font-family: 'icomoon' !important;
     }
 }
 
 .slick-next::before {
     content: '\f105';
+    font-family: 'icomoon' !important;
 }
 
 .slick-dots {
