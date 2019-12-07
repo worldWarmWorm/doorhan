@@ -583,7 +583,57 @@ html {
     }
 }
 
+.geo,
+.phone,
+.mail {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    p {
+        margin-right: 8px;
 
+    }
+}
+
+.phone a {
+    margin-left: 5px;
+}
+
+.find-us {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        transition: .3s;
+        color: $theme2;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.find-us__title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.i {
+    width: 30px;
+    height: 30px;
+    color: $theme2;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail p.i::before {
+    font-size: 20px;
+}
 
 .find-us,
 .footer .logo {
@@ -644,7 +694,17 @@ html {
 
     a {
         margin-left: 10px;
-        color: $theme4;
+        border: 1px solid $theme2;
+        color: $theme2;
+        padding: 3px 5px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+            background-color: $theme2;
+            color: $theme3;
+        }
     }
 }
 
