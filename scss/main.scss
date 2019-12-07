@@ -61,7 +61,7 @@ html {
 #toTop {
     z-index: 999;
     width: 50px;
-
+    border: 1px solid $theme2;
     height: 50px;
     font-size: 3rem;
     background-color: rgba($theme3, .7);
@@ -101,7 +101,6 @@ html {
     position: relative;
     color: $theme3;
     z-index: 0;
-    text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     outline: none;
@@ -126,7 +125,7 @@ html {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-color: $theme2;
+        background-color: rgba($theme2, .3);
         height: 30px;
         width: 88%;
         z-index: -1;
@@ -373,21 +372,43 @@ html {
 
 .menu {
     z-index: 1;
-    filter: opacity(.9);
-    transition: ease-in .3s;
 
     nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         min-height: 80px;
-        background-color: #fff;
+        background-color: rgba($theme2, .3);
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
+        transition: ease-in .3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
     }
+}
+
+.call-button-menu a {
+    border: 3px solid $theme3;
+    padding: 0 24px;
+    display: block;
+    height: 47px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    position: relative;
+    color: $theme3;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: ease-in .3s;
 
     &:hover {
-        filter: opacity(1);
+        color: $theme2;
+        background-color: $theme3;
+        border: 3px solid $theme3;
     }
 }
 
@@ -402,15 +423,10 @@ html {
     &:hover {
         text-decoration: none;
         box-shadow: 0 0 0 2px rgba($theme3, $alpha: 1);
-        background-color: $theme3;
         color: $theme2;
+        background-color: $theme3;
     }
 
-    &:focus {
-        box-shadow: 0 0 0 2px rgba($theme3, 1);
-        color: $theme3;
-        background-color: $theme2;
-    }
 }
 
 .logo img {
@@ -512,12 +528,41 @@ html {
     }
 }
 
+.download {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 0;
+
+    a {
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid $theme3;
+        color: $theme3;
+        border-radius: 4px;
+        padding: 3px 5px;
+        transition: ease-in .3s;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $theme3;
+            color: $theme2;
+        }
+    }
+    p {
+        margin-top: 15px;
+    }
+}
+
+
 // gallery----------------------------------
 
 // footer----------------------------------
 
 .footer {
-    background-color: #34495e;
+    background-color: $theme3;
     color: #fff;
 }
 
@@ -595,7 +640,7 @@ html {
     border-top: 1px solid $neutral;
     display: flex;
     align-content: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 
     a {
         margin-left: 10px;
