@@ -515,16 +515,111 @@ html {
 
 // about----------------------------------
 
+// schedule----------------------------------
+
+.schedule {
+    text-align: center;
+    font-size: 18px;
+    padding: 50px 0;
+    background-color: $theme3;
+}
+
+.schedule__title h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $theme2;
+}
+
+.steps__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    padding: 15px;
+    background-color: $theme3;
+    color: $theme2;
+    box-shadow: 0 0 10px 4px rgba(#000, .2);
+    position: relative;
+    h2 {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        margin: 0;
+        padding: 0;
+        font-size: 5em;
+        color: rgba($theme2, .1);
+        font-weight: 600;
+        transition: ease-in .3s;
+    }
+
+    &:hover h2 {
+        top: 0;
+    }
+
+    p {
+        line-height: 26px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba($neutral, .1);
+    }
+}
+
+.steps__content {
+    padding: 20px 0;
+}
+
+
+.steps__content {
+    
+
+    p {
+        height: 100%;
+    }
+
+
+}
+
+// &::after {
+//     content: '';
+//    
+// }
+
+// &::before {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     font-weight: 600;
+//     font-size: 4em;
+//     color: rgba($theme4, .9);
+
+// }
+
+
+// schedule----------------------------------
+
 // gallery----------------------------------
 
 .gallery {
     padding: 50px 0;
 
     h2 {
-        font-size: 40px;
+        font-size: 28px;
         padding: 10px;
         text-align: center;
         font-weight: 600;
+        text-transform: uppercase;
     }
 }
 
