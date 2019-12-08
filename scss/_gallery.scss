@@ -13,6 +13,10 @@
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
 	height: 250px;
+
+	a:hover img {
+		outline: 1px solid #000;
+	}
 }
 
 .og-grid li > a,

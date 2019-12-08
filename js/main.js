@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
     // gallery
+
     Grid.init();
 
     // slider
+
     $('.header__slider').slick({
         infinite: true,
         prevArrow: '<button type="button" class="slick-prev slick-btn"></button>',
@@ -16,6 +18,7 @@ $(document).ready(function () {
     });
 
     // to top
+
     $(window).scroll(function () {
         if ($(this).scrollTop() != 0)
             $('#toTop').fadeIn();
@@ -29,6 +32,7 @@ $(document).ready(function () {
     });
 
     // toggle buttons
+
     $('.toggle-button_1').click(function () {
         $('.item-1__content').toggle(300);
 
@@ -52,6 +56,17 @@ $(document).ready(function () {
             $('.toggle-button .hide-icon').hide();
             $('.toggle-button .show-icon').show();
         }
+    });
+
+    // mobile menu
+
+    $("#my-mmenu").mmenu({
+        "extensions": [
+        "position-left",
+        "fx-menu-slide",
+        ]
+    },{
+        "language":"ru"
     });
 
 });
