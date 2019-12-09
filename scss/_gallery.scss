@@ -19,15 +19,15 @@
 	}
 }
 
-.og-grid li > a,
-.og-grid li > a img {
+.og-grid li>a,
+.og-grid li>a img {
 	border: none;
 	outline: none;
 	display: block;
 	position: relative;
 }
 
-.og-grid li.og-expanded > a::after {
+.og-grid li.og-expanded>a::after {
 	top: auto;
 	border: solid transparent;
 	content: " ";
@@ -125,59 +125,59 @@
 
 .og-details a {
 	border: none;
-    background-color: transparent;
-    padding: 0 24px;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 40px;
-    position: relative;
-    color: $theme3;
-    z-index: 0;
-    text-align: center;
-    text-decoration: none;
+	background-color: transparent;
+	padding: 0 24px;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 40px;
+	position: relative;
+	color: $theme3;
+	z-index: 0;
+	text-align: center;
+	text-decoration: none;
 	outline: none;
-	
 
-    &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -12px;
-        width: 50%;
-        height: 50px;
-        border: 3px solid $theme3;
-        border-radius: 4px;
-        z-index: -1;
-        transition: .3s ease-in-out;
-        text-align: center;
-    }
 
-    &:after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #ddd;
-        height: 30px;
-        width: 88%;
-        z-index: -1;
-        transition: .3s linear;
-    }
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -12px;
+		width: 50%;
+		height: 50px;
+		border: 3px solid $theme3;
+		border-radius: 4px;
+		z-index: -1;
+		transition: .3s ease-in-out;
+		text-align: center;
+	}
 
-    &:hover:after {
-        opacity: 0;
-        background-color: $theme3;
-    }
+	&:after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #ddd;
+		height: 30px;
+		width: 88%;
+		z-index: -1;
+		transition: .3s linear;
+	}
 
-    &:hover {
-        color: $theme2;
-    }
+	&:hover:after {
+		opacity: 0;
+		background-color: $theme3;
+	}
 
-    &:hover::before {
-        width: 100%;
-        background-color: $theme3;
-    }
+	&:hover {
+		color: $theme2;
+	}
+
+	&:hover::before {
+		width: 100%;
+		background-color: $theme3;
+	}
 }
 
 .og-loading {
@@ -194,22 +194,56 @@
 }
 
 @keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+	0% {
+		background: #ddd;
+	}
+
+	33% {
+		background: #ccc;
+		box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+	}
+
+	66% {
+		background: #ccc;
+		box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+	}
 }
 
 @media screen and (max-width: 830px) {
 
-	.og-expander h3 { font-size: 32px; }
-	.og-expander p { font-size: 13px; }
-	.og-expander a { font-size: 12px; }
+	.og-expander h3 {
+		font-size: 32px;
+	}
+
+	.og-expander p {
+		font-size: 13px;
+	}
+
+	.og-expander a {
+		font-size: 12px;
+		border: 1px soid $theme3;
+		background-color: ;
+
+		&::after {
+			display: none
+		}
+
+		&::before {
+			display: none
+		}
+	}
 
 }
 
 @media screen and (max-width: 650px) {
 
-	.og-fullimg { display: none; }
-	.og-details { float: none; width: 100%; }
-	
+	.og-fullimg {
+		display: none;
+	}
+
+	.og-details {
+		float: none;
+		width: 100%;
+	}
+
 }
