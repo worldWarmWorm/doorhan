@@ -125,7 +125,7 @@ html {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-color: rgba($theme2, .3);
+        background-color: rgba($theme2, 1);
         height: 30px;
         width: 88%;
         z-index: -1;
@@ -193,7 +193,7 @@ html {
 }
 .item__content {
     display: none;
-    width: 40%;
+    width: 50%;
     border-radius: 4px;
     background-color: $theme2;
     color: $theme3;
@@ -217,8 +217,8 @@ html {
         padding: 10px 0;
         text-align: center;
         text-transform: uppercase;
-        color: $theme2;
-        background-color: $theme4;
+        color: $theme4;
+        background-color: $theme3;
         border-radius: 4px;
     }
 
