@@ -11,9 +11,9 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="slick-prev slick-btn"></button>',
         nextArrow: '<button type="button" class="slick-next slick-btn"></button>',
         fade: true,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 5000
+        dots: true
+        // autoplay: true,
+        // autoplaySpeed: 5000
 
     });
 
@@ -48,6 +48,18 @@ $(document).ready(function () {
 
     $('.toggle-button_2').click(function () {
         $('.item-2__content').toggle(300);
+
+        if ($('.toggle-button .show-icon').is(":visible")) {
+            $('.toggle-button .show-icon').hide();
+            $('.toggle-button .hide-icon').show();
+        } else {
+            $('.toggle-button .hide-icon').hide();
+            $('.toggle-button .show-icon').show();
+        }
+    });
+
+    $('.toggle-button_3').click(function () {
+        $('.item-3__content').toggle(300);
 
         if ($('.toggle-button .show-icon').is(":visible")) {
             $('.toggle-button .show-icon').hide();
