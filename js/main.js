@@ -31,44 +31,6 @@ $(document).ready(function () {
         }, 800);
     });
 
-    // toggle buttons
-
-    $('.toggle-button_1').click(function () {
-        $('.item-1__content').toggle(300);
-
-        if ($('.toggle-button .show-icon').is(":visible")) {
-            $('.toggle-button .show-icon').hide();
-            $('.toggle-button .hide-icon').show();
-        } else {
-            $('.toggle-button .hide-icon').hide();
-            $('.toggle-button .show-icon').show();
-        }
-    });
-
-
-    $('.toggle-button_2').click(function () {
-        $('.item-2__content').toggle(300);
-
-        if ($('.toggle-button .show-icon').is(":visible")) {
-            $('.toggle-button .show-icon').hide();
-            $('.toggle-button .hide-icon').show();
-        } else {
-            $('.toggle-button .hide-icon').hide();
-            $('.toggle-button .show-icon').show();
-        }
-    });
-
-    $('.toggle-button_3').click(function () {
-        $('.item-3__content').toggle(300);
-
-        if ($('.toggle-button .show-icon').is(":visible")) {
-            $('.toggle-button .show-icon').hide();
-            $('.toggle-button .hide-icon').show();
-        } else {
-            $('.toggle-button .hide-icon').hide();
-            $('.toggle-button .show-icon').show();
-        }
-    });
 
     // mobile menu
 
