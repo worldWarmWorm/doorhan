@@ -417,6 +417,9 @@
         width: 10px;
         height: 12px;
     }
+    .advantages .advantages-inner .advantages-middle .advantages-item:first-child {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 340px) {

@@ -11,9 +11,9 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="slick-prev slick-btn"></button>',
         nextArrow: '<button type="button" class="slick-next slick-btn"></button>',
         fade: true,
-        dots: true
-        // autoplay: true,
-        // autoplaySpeed: 5000
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000
 
     });
 
