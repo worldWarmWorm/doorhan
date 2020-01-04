@@ -536,20 +536,22 @@
             align-self: flex-end;
             flex-flow: row-reverse wrap-reverse;
         }
-        .advantages-middle .advantages-item {
+        .advantages-middle .advantages-item:first-child {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 15px;
             ul {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
+                height: 60%;
+                font-size: 16px;
                 li span {
                     display: inline-block;
-                    width: 15px;
-                    height: 2px;
-                    border-radius: 2px;
-                    background-color: $theme3;
-                    margin-right: 5px;
+                    border: 6px solid transparent;
+                    border-right: 7px solid $theme3;
+                    margin-right: 8px;
                 }
             }
         }
