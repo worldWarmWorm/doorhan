@@ -161,7 +161,7 @@
     }
 
     button {
-        border-radius: 2px;
+        border-radius: 50%;
         font-size: 0;
         width: 20px;
         height: 20px;
@@ -170,7 +170,6 @@
         outline: none;
         border: none;
         cursor: pointer;
-        border: 2px solid $theme3;
     }
 }
 
