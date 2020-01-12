@@ -945,7 +945,7 @@ html {
   min-height: 80vh; }
 
 .footer__inner {
-  padding: 30px 0; }
+  padding: 100px 0; }
 
 .footer__top {
   display: -webkit-box;
@@ -1363,6 +1363,9 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+
+  .footer__inner {
+    padding: 30px 0; }
 
   .advantages .advantages-inner {
     -webkit-box-orient: vertical;
