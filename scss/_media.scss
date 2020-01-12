@@ -1,4 +1,38 @@
+@media screen and (max-width: 1718px) {
+    .download .download-inner {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1372px) {
+    .download .download-inner {
+        height: 314px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .download .download-inner {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .download .download-inner {
+        height: 196px;
+    }
+}
+
+@media screen and (max-width: 674px) {
+    .download {
+        background: $theme3;
+    }
+}
+
 @media screen and (max-width: 1199px) {
+
+    .advantages {
+        padding: 50px 0;
+    }
 
     .menu__items,
     .call-button-menu,
