@@ -54,7 +54,8 @@
   display: inline-block;
   margin: 10px 5px 0 5px;
   vertical-align: top;
-  height: 250px; }
+  max-height: 250px;
+  background-color: #f1f1f1; }
   .og-grid li a:hover img {
     outline: 1px solid #000; }
 
@@ -63,7 +64,8 @@
   border: none;
   outline: none;
   display: block;
-  position: relative; }
+  position: relative;
+  max-width: 264px; }
 
 .og-grid li.og-expanded > a::after {
   bottom: -11px;
@@ -87,7 +89,8 @@
   margin-top: 10px;
   text-align: left;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
 
 .og-expander-inner {
   padding: 50px 30px;
@@ -167,7 +170,7 @@
     top: -12px;
     width: 50%;
     height: 50px;
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     border-radius: 4px;
     z-index: -1;
     -webkit-transition: .3s ease-in-out;
@@ -585,7 +588,7 @@ html {
   font-family: 'icomoon' !important; }
 
 .slick-dots {
-  margin-top: -4%;
+  margin-top: -45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,8 +605,8 @@ html {
   .slick-dots button {
     border-radius: 50%;
     font-size: 0;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     margin: 6px;
     background-color: #fff;
     outline: none;
@@ -631,10 +634,10 @@ html {
     background-color: white; }
 
 .call-button-menu a {
-  border: 3px solid #003a70;
+  border: 1px solid #003a70;
   padding: 0 24px;
   display: block;
-  height: 47px;
+  height: 43px;
   border-radius: 4px;
   font-size: 22px;
   line-height: 40px;
@@ -648,7 +651,7 @@ html {
   .call-button-menu a:hover {
     color: #fff;
     background-color: #003a70;
-    border: 3px solid #003a70; }
+    border: 1px solid #003a70; }
 
 .menu__items ul {
   display: -webkit-box;
@@ -800,15 +803,31 @@ html {
 .sale-mark {
   position: relative; }
   .sale-mark::before {
-    content: '';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 600;
+    content: 'sale';
+    color: #fff;
+    text-transform: uppercase;
     position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 50px;
-    height: 54px;
-    background: url(../img/sale.png) no-repeat 50% 50%;
-    background-size: cover;
-    z-index: 1; }
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 5px #e74c3c;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 5px #e74c3c;
+    z-index: 1;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
 
 .download {
   font-size: 16px;
@@ -1026,9 +1045,6 @@ html {
 .mail p.i::before {
   font-size: 20px; }
 
-.find-us {
-  margin: 0 auto; }
-
 .social-nets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1122,6 +1138,9 @@ html {
   .download {
     background: #003a70; } }
 @media screen and (max-width: 1199px) {
+  .geo br {
+    display: none; }
+
   .advantages {
     padding: 50px 0; }
 
@@ -1330,7 +1349,10 @@ html {
   .advantages .advantages-inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+
+  .slick-dots {
+    margin-top: -24px; } }
 @media screen and (max-width: 767px) {
   .slide .slide-content {
     padding: 8px; }

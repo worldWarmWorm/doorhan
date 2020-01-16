@@ -12,7 +12,8 @@
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 250px;
+	max-height: 250px;
+	background-color: #f1f1f1;
 
 	a:hover img {
 		outline: 1px solid #000;
@@ -25,6 +26,7 @@
 	outline: none;
 	display: block;
 	position: relative;
+	max-width: 264px;
 }
 
 .og-grid li.og-expanded>a::after {
@@ -51,6 +53,7 @@
 	text-align: left;
 	height: 0;
 	overflow: hidden;
+	z-index: 1;
 }
 
 .og-expander-inner {
@@ -141,7 +144,7 @@
 		top: -12px;
 		width: 50%;
 		height: 50px;
-		border: 3px solid $theme2;
+		border: 1px solid $theme2;
 		border-radius: 4px;
 		z-index: -1;
 		transition: .3s ease-in-out;

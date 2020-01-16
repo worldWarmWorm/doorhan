@@ -146,7 +146,7 @@
 }
 
 .slick-dots {
-    margin-top: -4%;
+    margin-top: -45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,8 +163,8 @@
     button {
         border-radius: 50%;
         font-size: 0;
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
         margin: 6px;
         background-color: $theme2;
         outline: none;
@@ -196,10 +196,10 @@
 }
 
 .call-button-menu a {
-    border: 3px solid $theme3;
+    border: 1px solid $theme3;
     padding: 0 24px;
     display: block;
-    height: 47px;
+    height: 43px;
     border-radius: 4px;
     font-size: 22px;
     line-height: 40px;
@@ -213,7 +213,7 @@
     &:hover {
         color: $theme2;
         background-color: $theme3;
-        border: 3px solid $theme3;
+        border: 1px solid $theme3;
     }
 }
 
@@ -436,15 +436,23 @@
 .sale-mark {
     position: relative;
     &::before {
-        content: '';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        content: 'sale';
+        color: #fff;
+        text-transform: uppercase;
         position: absolute;
-        bottom: 5px;
-        right: 5px;
-        width: 50px;
-        height: 54px;
-        background: url(../img/sale.png) no-repeat 50% 50%;
-        background-size: cover;
+        bottom: 10px;
+        right: 10px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #e74c3c;
+        box-shadow: 0 0 0 2px #fff, 0 0 0 5px #e74c3c;
         z-index: 1;
+        transform: rotate(-15deg);
     }
 }
 
@@ -659,10 +667,6 @@
 
 .mail p.i::before {
     font-size: 20px;
-}
-
-.find-us {
-    margin: 0 auto;
 }
 
 .social-nets {
