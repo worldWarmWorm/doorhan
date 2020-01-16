@@ -34,13 +34,8 @@ $(document).ready(function () {
 
     // mobile menu
 
-    $("#my-mmenu").mmenu({
-        "extensions": [
-        "position-left",
-        "fx-menu-slide",
-        ]
-    },{
-        "language":"ru"
+    $(".icon-menu").on("click", function () {
+        $(".mobile-menu__items").slideToggle();
     });
 
 });

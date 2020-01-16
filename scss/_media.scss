@@ -30,7 +30,35 @@
 
 @media screen and (max-width: 1199px) {
     .geo br {
+        display: none !important;
+    }
+
+    .mobile-menu__items {
         display: none;
+        background-color: $theme2;
+        width: 100%;
+        position: absolute;
+        z-index: 50;
+        ul {
+            padding-top: 60px;
+            li {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 0 auto;
+                padding: 10px;
+                a {
+                    color: $theme3;
+                    font-size: 16px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .icon-menu {
+        z-index: 55;
     }
 
     .advantages {
@@ -52,8 +80,10 @@
         background-color: rgba($theme2, 1);
         padding: 0 15px;
         min-height: 60px;
+
         nav {
             min-height: 60px;
+            justify-content: space-between;
         }
     }
 
@@ -97,7 +127,7 @@
     #toTop {
         width: 30px;
         height: 30px;
-        left: 15px;
+        right: 15px;
         bottom: 15px;
 
         &::before {
@@ -181,6 +211,7 @@
     .advantages .advantages-inner .advantages-left {
         height: 100%;
         flex-direction: column;
+
         .advantages-item {
             width: 155px;
         }
@@ -235,8 +266,10 @@
 
     .footer {
         height: 100%;
-        .footer__top  {
+
+        .footer__top {
             margin-bottom: 25px;
+
             .find-us {
                 margin: 0;
                 margin-bottom: 15px;
@@ -252,10 +285,12 @@
     .slide {
         height: 500px;
     }
+
     .header__slider,
     .about {
         margin-top: 60px;
     }
+
     .footer__inner {
         flex-direction: column;
     }
@@ -264,18 +299,23 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
+
     .download p {
         max-width: 100%;
     }
+
     .advantages .advantages-inner .advantages-left {
         display: none;
     }
+
     .advantages .advantages-inner .advantages-items.advantages-middle {
         width: 53.5%;
     }
+
     .advantages .advantages-inner {
         justify-content: center;
     }
+
     .slick-dots {
         margin-top: -24px;
     }
@@ -284,11 +324,14 @@
 @media screen and (max-width: 767px) {
     .slide .slide-content {
         padding: 8px;
+
         .slide-content-text h2 {
             font-size: 16px;
         }
+
         .slide-content-text p {
             font-size: 14px;
+
             span {
                 font-size: 16px;
             }
@@ -335,6 +378,7 @@
         margin-bottom: 0;
         width: 46%;
     }
+
     .advantages .advantages-inner .advantages-middle .advantages-item:not(:first-child) {
         width: 46%;
     }
@@ -345,6 +389,7 @@
 }
 
 @media screen and (max-width: 610px) {
+
     .header,
     .header__slider,
     .slide {
@@ -386,6 +431,7 @@
         p {
             font-size: 14px;
         }
+
         a {
             padding: 10px 20px;
         }
@@ -399,6 +445,7 @@
     .advantages .advantages-inner .advantages-middle .advantages-item:not(:first-child) {
         display: none !important;
     }
+
     .advantages .advantages-inner .advantages-items {
         width: 100% !important;
     }
@@ -413,7 +460,7 @@
     .advantages {
         padding: 25px 0;
     }
-    
+
     .gallery {
         padding: 25px 0 0;
     }
@@ -429,6 +476,7 @@
     .advantages .advantages-inner .advantages-items .advantages-item {
         margin-bottom: 0;
     }
+
     .advantages .advantages-inner .advantages-items .advantages-item-big {
         height: 270px;
     }
@@ -439,28 +487,35 @@
 }
 
 @media screen and (max-width: 460px) {
+
     .header,
     .header__slider,
     .slide {
         height: 260px;
     }
+
     .slide .slide-content {
         margin-left: 0;
         max-width: 270px;
+
         .slide-content-text h2 {
             font-size: 14px;
         }
+
         .slide-content-text p {
             font-size: 13px;
+
             span {
                 font-size: 14px;
             }
         }
     }
+
     .slick-dots button {
         width: 10px;
         height: 12px;
     }
+
     .advantages .advantages-inner .advantages-middle .advantages-item:first-child {
         padding: 5px;
     }
@@ -480,8 +535,4 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .mobile-top {
-        display: none;
-    }
-}
+@media screen and (min-width: 1200px) {}
