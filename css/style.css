@@ -594,7 +594,8 @@ html {
   .menu:hover {
     background-color: white; }
 
-.call-button-menu a {
+.call-button-menu a,
+.call-button-menu-mobile a {
   border: 1px solid #003a70;
   padding: 0 24px;
   display: block;
@@ -609,7 +610,8 @@ html {
   outline: none;
   -webkit-transition: ease-in .3s;
   transition: ease-in .3s; }
-  .call-button-menu a:hover {
+  .call-button-menu a:hover,
+  .call-button-menu-mobile a:hover {
     color: #fff;
     background-color: #003a70;
     border: 1px solid #003a70; }
@@ -1099,6 +1101,10 @@ html {
   .download {
     background: #003a70; } }
 @media screen and (max-width: 1199px) {
+  .call-button-menu-mobile a {
+    background-color: #003a70;
+    color: #fff; }
+
   .geo br {
     display: none !important; }
 
@@ -1109,7 +1115,7 @@ html {
     position: absolute;
     z-index: 50; }
     .mobile-menu__items ul {
-      padding: 76px 0; }
+      padding: 55px 0; }
       .mobile-menu__items ul li {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1136,7 +1142,16 @@ html {
     z-index: 56;
     width: 30px;
     height: 30px;
-    background: url("../img/burger.svg") 50% 50%/cover no-repeat; }
+    background: url("../img/burger.svg") 50% 50%/cover no-repeat;
+    margin-right: 20px; }
+
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
   .icon-menu {
     z-index: 55; }
@@ -1164,9 +1179,6 @@ html {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-
-  .logo img {
-    min-height: 24px; }
 
   #toTop {
     background-color: #003a70; }
@@ -1409,7 +1421,23 @@ html {
   .advantages .advantages-inner {
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+
+  .mobile-menu {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; }
+
+  .logo img {
+    max-height: 18px; }
+
+  .call-button-menu-mobile a {
+    padding: 0 5px;
+    display: block;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 30px; } }
 @media screen and (max-width: 610px) {
   .header,
   .header__slider,

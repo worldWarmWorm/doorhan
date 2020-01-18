@@ -195,7 +195,8 @@
     }
 }
 
-.call-button-menu a {
+.call-button-menu a,
+.call-button-menu-mobile a {
     border: 1px solid $theme3;
     padding: 0 24px;
     display: block;

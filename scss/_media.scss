@@ -29,6 +29,12 @@
 }
 
 @media screen and (max-width: 1199px) {
+
+    .call-button-menu-mobile a {
+        background-color: $theme3;
+        color: $theme2;
+    }
+
     .geo br {
         display: none !important;
     }
@@ -39,19 +45,23 @@
         width: 100%;
         position: absolute;
         z-index: 50;
+
         ul {
-            padding: 76px 0;
+            padding: 55px 0;
+
             li {
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 margin: 0 auto;
                 padding: 10px;
+
                 a {
                     color: $theme3;
                     font-size: 16px;
                     text-transform: uppercase;
                     font-weight: 600;
+
                     &:hover {
                         text-decoration: none;
                     }
@@ -69,7 +79,14 @@
         width: 30px;
         height: 30px;
         background: url("../img/burger.svg") 50% 50% / cover no-repeat;
+        margin-right: 20px;
     }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
     .icon-menu {
         z-index: 55;
     }
@@ -98,10 +115,6 @@
             min-height: 60px;
             justify-content: space-between;
         }
-    }
-
-    .logo img {
-        min-height: 24px;
     }
 
     #toTop {
@@ -392,6 +405,25 @@
 
     .advantages .advantages-inner {
         align-items: center;
+    }
+
+    .mobile-menu {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .logo img {
+        max-height: 18px;
+    }
+
+    .call-button-menu-mobile a {
+        padding: 0 5px;
+        display: block;
+        height: 30px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 30px;
     }
 }
 
