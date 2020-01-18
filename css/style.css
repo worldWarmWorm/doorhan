@@ -1136,7 +1136,7 @@ html {
     z-index: 56;
     width: 30px;
     height: 30px;
-    background: url("/img/burger.svg") 50% 50%/cover no-repeat; }
+    background: url("../img/burger.svg") 50% 50%/cover no-repeat; }
 
   .icon-menu {
     z-index: 55; }
