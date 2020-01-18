@@ -205,16 +205,17 @@
     font-size: 22px;
     line-height: 40px;
     position: relative;
-    color: $theme3;
+    color: $theme3 !important;
     text-align: center;
     text-decoration: none;
     outline: none;
     transition: ease-in .3s;
 
     &:hover {
-        color: $theme2;
-        background-color: $theme3;
-        border: 1px solid $theme3;
+        color: $theme2 !important;
+        background-color: $theme3 !important;
+        border: 1px solid $theme3 !important;
+        text-decoration: none !important;
     }
 }
 
@@ -746,5 +747,14 @@
 }
 
 // footer----------------------------------
+
+.fancybox-button.fancybox-button--share {
+    display: none;
+}
+
+.info-fancy  {
+    padding-bottom: 15px;
+    text-align: left;
+}
 
 @import 'media';

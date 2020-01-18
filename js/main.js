@@ -6,6 +6,24 @@ $(document).ready(function () {
         protect: true
     });
 
+    $('[data-fancybox="images"]').fancybox({
+        baseClass: "fancybox-custom-layout",
+        protect: true,
+        infobar: false,
+        touch: {
+          vertical: false
+        },
+        buttons: ["close", "thumbs", "share"],
+        animationEffect: "fade",
+        transitionEffect: "fade",
+        preventCaptionOverlap: false,
+        idleTime: false,
+        gutter: 0,
+        caption: function(instance) {
+          return '<p class="info-fancy">Подробную информацию о товаре можно узнать позвонив нам</p><div class="call-button-menu-mobile"><a href="tel:79039995511">Позвонить</a></div>';
+        }
+    });
+
     // slider
 
     $('.header__slider').slick({
