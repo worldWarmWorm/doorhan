@@ -40,7 +40,7 @@
         position: absolute;
         z-index: 50;
         ul {
-            padding-top: 60px;
+            padding: 76px 0;
             li {
                 display: flex;
                 justify-content: center;
@@ -50,12 +50,25 @@
                 a {
                     color: $theme3;
                     font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 600;
                     &:hover {
                         text-decoration: none;
                     }
                 }
             }
         }
+    }
+
+    .mobile-menu {
+        display: block;
+        color: $theme3;
+        font-size: 20px;
+        text-decoration: none;
+        z-index: 56;
+        width: 30px;
+        height: 30px;
+        background: url("/img/burger.svg") 50% 50% / cover no-repeat;
     }
     .icon-menu {
         z-index: 55;
@@ -93,12 +106,6 @@
 
     #toTop {
         background-color: rgba($theme3, 1);
-    }
-
-    a.icon-menu {
-        color: $theme3;
-        font-size: 20px;
-        text-decoration: none;
     }
 
     .mobile-top {
@@ -535,4 +542,8 @@
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .mobile-menu {
+        display: none;
+    }
+}

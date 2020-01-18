@@ -2,7 +2,9 @@ $(document).ready(function () {
 
     // gallery
 
-    Grid.init();
+    $('[data-fancybox="gallery"]').fancybox({
+        protect: true
+    });
 
     // slider
 
@@ -34,8 +36,7 @@ $(document).ready(function () {
 
     // mobile menu
 
-    $(".icon-menu").on("click", function () {
-        $(".mobile-menu__items").slideToggle();
+    $(".mobile-menu").on("click", function () {
+        $(".mobile-menu__items").slideToggle(500);
     });
-
 });
