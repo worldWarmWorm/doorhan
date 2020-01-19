@@ -428,14 +428,14 @@
         line-height: 30px;
         margin-left: auto;
     }
-}
-
-@media screen and (max-width: 610px) {
+    .about__inner {
+        margin: 60px 0 30px;
+    }
 
     .header,
     .header__slider,
     .slide {
-        height: 350px;
+        height: 260px;
     }
 }
 
@@ -446,7 +446,6 @@
 
     .about__inner {
         min-height: 500px;
-        margin: 60px 0 30px;
 
         &::after {
             font-size: 20px;
@@ -648,7 +647,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .mobile-menu {
-        display: none;
+    .mobile-menu,
+    .call-button-menu-mobile {
+        display: none !important;
     }
 }
