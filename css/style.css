@@ -45,17 +45,18 @@
 
 .og-grid {
   list-style: none;
-  padding: 30px 0;
+  padding: 50px 0 110px;
   margin: 0 auto;
   text-align: center;
   width: 100%; }
 
 .og-grid li {
   display: inline-block;
-  margin: 10px 5px 0 5px;
+  margin: 33px 0;
+  padding: 0 15px;
   vertical-align: top;
   max-height: 250px;
-  background-color: #f1f1f1; }
+  max-width: 274px; }
   .og-grid li a:hover img {
     outline: 1px solid #000; }
 
@@ -65,7 +66,7 @@
   outline: none;
   display: block;
   position: relative;
-  max-width: 264px; }
+  max-width: 100%; }
 
 .og-grid li.og-expanded > a::after {
   bottom: -11px;
@@ -1109,6 +1110,13 @@ html {
   .download {
     background: #003a70; } }
 @media screen and (max-width: 1199px) {
+  .og-grid {
+    padding: 30px 0; }
+    .og-grid li {
+      margin: 10px 0;
+      padding: 0 10px;
+      max-width: 460px; }
+
   .call-button-menu-mobile a {
     background-color: #003a70;
     color: #fff !important; }
@@ -1601,5 +1609,5 @@ html {
     right: 308px; } }
 @media screen and (min-width: 1200px) {
   .mobile-menu,
-  .call-button-menu-mobile {
+  .menu .call-button-menu-mobile {
     display: none !important; } }
